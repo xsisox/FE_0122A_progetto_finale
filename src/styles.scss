@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-typography.mat-app-background{
+  background: black;
+
+}
+
+.pagination li{
+  cursor: pointer;
+}
+
+.active-pagination {
+  background-color: lightgray;
+}
+
+.cursor-disabled {
+  cursor: no-drop;
+  pointer-events: visible;
+}
+
+.dropdown{
+  cursor: pointer;
+}
+
