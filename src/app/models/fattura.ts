@@ -1,6 +1,4 @@
 
-
-
 export interface Fattura {
   id: number;
   data: string;

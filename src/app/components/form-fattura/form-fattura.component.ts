@@ -60,7 +60,6 @@ export class FormFatturaComponent implements OnInit {
 		console.log('ngOnInit');
 		this.route.params.subscribe(params => {
 			this.id = +params['id'];
-			//this.idCliente = +params['idCliente'];
 			console.log(this.id);
 			this.InizializzaForm();
 			this.Carica();

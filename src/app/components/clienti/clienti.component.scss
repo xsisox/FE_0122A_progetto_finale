@@ -1,3 +1,26 @@
 table {
   width: 100%;
 }
+
+#nuovaFattura{
+  background-color: green;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#dettagliFattura{
+  background-color: yellow;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#modifica{
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#cancella{
+  background-color: red;
+  color: balck;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

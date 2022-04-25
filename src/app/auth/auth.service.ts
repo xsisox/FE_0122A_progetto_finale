@@ -33,7 +33,7 @@ export class AuthService {
   }
 
 
-
+  //LOGIN
 
   login(data: { username: string; password: string }) {
     return this.http
@@ -50,6 +50,8 @@ export class AuthService {
         catchError(this.errors)
       );
   }
+
+//SIGNUP
 
   register(data: any) {
     return this.http
@@ -69,6 +71,7 @@ export class AuthService {
   }
 
 
+//LOGOUT
 
   logout() {
     this.authSub.next(null);

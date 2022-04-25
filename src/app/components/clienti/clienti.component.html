@@ -43,10 +43,10 @@
     <ng-container matColumnDef="gestioneCliente">
       <th mat-header-cell *matHeaderCellDef> Gestione Cliente </th>
       <td mat-cell *matCellDef="let element" >
-        <button [routerLink]="['/nuova-fattura', element.id ]" routerLinkActive="router-link-active" class="me-3" >Nuova Fattura </button>
-        <button [routerLink]="['/fatture/cliente', element.id]" routerLinkActive="router-link-active" class="me-3"> Dettagli Fatture</button>
-        <button [routerLink]="['/form-cliente', element.id]" routerLinkActive="router-link-active" class="me-3">Modifica</button>
-        <button (click)="cancellaCliente(element.id)">Cancella</button>
+        <button [routerLink]="['/nuova-fattura', element.id ]" routerLinkActive="router-link-active" class="me-3" id="nuovaFattura"  >Nuova Fattura </button>
+        <button [routerLink]="['/fatture/cliente', element.id]" routerLinkActive="router-link-active" class="me-3" id="dettagliFattura"> Dettagli Fatture</button>
+        <button [routerLink]="['/form-cliente', element.id]" routerLinkActive="router-link-active" class="me-3"id="modifica">Modifica</button>
+        <button (click)="cancellaCliente(element.id)" id="cancella">Cancella</button>
       </td>
     </ng-container>
 

@@ -164,7 +164,7 @@ export class ComponentsService {
 	}
 
 
-//CHIAMATE FATTURE
+//CHIAMATE-FATTURE
 getInvoices(page:number, size:number): Observable<InvoiceData>{
   let params = new HttpParams();
 
@@ -218,19 +218,19 @@ getInvoicesByCliente(id:number, page:number, size:number): Observable<InvoiceDat
 }
 
 
-//CHIAMATE COMUNI
+//CHIAMATE-COMUNI
 getComuni(p: number) {
   return this.http.get<any>(`${environment.apiBaseUrl}/comuni?page=${p}&size=20&sort=id,ASC`);
 }
 
 
-//CHIAMATE PROVINCE
+//CHIAMATE-PROVINCE
 getProvince(p: number) {
   return this.http.get<any>(`${environment.apiBaseUrl}/province?page=${p}&size=20&sort=id,ASC`);
 }
 
 
-//
+
 
 
 }
