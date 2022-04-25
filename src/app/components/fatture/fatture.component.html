@@ -2,46 +2,46 @@
   <h1 class="text-white">Lista Fatture <span style="font: weight 700px; background-color:rgba(255, 0, 0, 0.565)"> {{labelRagioneSociale}}</span>
   </h1>
 
- 
+
   <table mat-table [dataSource]="dataSource.content">
 
     <ng-container matColumnDef="id">
-      <th mat-header-cell *matHeaderCellDef> id </th>
-      <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      <th mat-header-cell *matHeaderCellDef style="color: rgba(176, 17, 86, 0.969);; font-weight: bold"> id </th>
+      <td mat-cell *matCellDef="let element" style="color: rgba(176, 17, 86, 0.969);; font-weight: bold"> {{element.id}} </td>
     </ng-container>
 
     <ng-container matColumnDef="fatturaNumero">
-      <th mat-header-cell *matHeaderCellDef>Fattura n°</th>
+      <th mat-header-cell *matHeaderCellDef style="color: white; font-weight: bold">Fattura n°</th>
       <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
     </ng-container>
 
     <ng-container matColumnDef="data">
-      <th mat-header-cell *matHeaderCellDef> Del </th>
-      <td mat-cell *matCellDef="let element"> {{element.data.split('T')[0]}} </td>
+      <th mat-header-cell *matHeaderCellDef style="color: rgb(188, 185, 185); font-weight: bold"> Del </th>
+      <td mat-cell *matCellDef="let element" style="color: rgb(188, 185, 185);"> {{element.data.split('T')[0]}} </td>
     </ng-container>
 
     <ng-container matColumnDef="importo">
-      <th mat-header-cell *matHeaderCellDef> Importo </th>
+      <th mat-header-cell *matHeaderCellDef style="color: white; font-weight: bold"> Importo </th>
       <td mat-cell *matCellDef="let element"> {{element.importo | currency: 'EUR'}} </td>
     </ng-container>
 
     <ng-container matColumnDef="ragioneSociale">
-      <th mat-header-cell *matHeaderCellDef> Ragione Sociale</th>
-      <td mat-cell *matCellDef="let element"> {{element.cliente.ragioneSociale}}</td>
+      <th mat-header-cell *matHeaderCellDef style="color: rgb(188, 185, 185); font-weight: bold"> Ragione Sociale</th>
+      <td mat-cell *matCellDef="let element" style="color: rgb(188, 185, 185);"> {{element.cliente.ragioneSociale}}</td>
     </ng-container>
 
     <ng-container matColumnDef="telefonoContatto">
-      <th mat-header-cell *matHeaderCellDef> Telefono Contatto </th>
+      <th mat-header-cell *matHeaderCellDef style="color: white; font-weight: bold"> Telefono Contatto </th>
       <td mat-cell *matCellDef="let element"> {{element.cliente.telefonoContatto}} </td>
     </ng-container>
 
     <ng-container matColumnDef="stato">
-      <th mat-header-cell *matHeaderCellDef> Stato </th>
-      <td mat-cell *matCellDef="let element"> {{element.stato.nome}} </td>
+      <th mat-header-cell *matHeaderCellDef style="color: rgb(188, 185, 185); font-weight: bold"> Stato </th>
+      <td mat-cell *matCellDef="let element" style="color: rgb(188, 185, 185);"> {{element.stato.nome}} </td>
     </ng-container>
 
     <ng-container matColumnDef="gestioneFattura">
-      <th mat-header-cell *matHeaderCellDef> Gestione Fattura</th>
+      <th mat-header-cell *matHeaderCellDef tyle="color: white; font-weight: bold"> Gestione Fattura</th>
       <td mat-cell *matCellDef="let element">
 
         <button [routerLink]="['/form-fattura', element.id]" routerLinkActive="router-link-active" class="me-3" id="modifica">Modifica</button>
