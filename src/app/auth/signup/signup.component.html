@@ -65,11 +65,11 @@
       <div fxLayout>
         <div>
           <mat-radio-group aria-label="Select an option" required ngModel #roles="ngModel" name="roles">
-            <div><mat-radio-button value="admin">Admin</mat-radio-button></div>
+            <div><mat-radio-button style="margin-bottom:10px" value="admin">Admin</mat-radio-button></div>
             <div><mat-radio-button value="user">User</mat-radio-button></div>
 
-            <mat-error *ngIf="roles.invalid">
-              Role <strong>Obbligatoria</strong>
+            <mat-error *ngIf="roles.invalid" style="margin-top:5px">
+              Role <strong>Obbligatoria*</strong>
 
             </mat-error>
           </mat-radio-group>
@@ -79,7 +79,7 @@
 
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Registrati</button>
+      <button mat-raised-button color="primary" type="submit" style="margin-left:30%" >Registrati</button>
     </mat-card-actions>
   </mat-card>
 </form>
