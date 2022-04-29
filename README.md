@@ -1,6 +1,7 @@
-## Progetto_Finale
+## Progetto_Finale - CRM (Customer Relationship Management )
 
-(This project was generated with Angular CLI version 13.3.0.)
+
+(This project was generated with Angular CLI version 13.3.0. )
 
 For a correct viewing of this APP
 

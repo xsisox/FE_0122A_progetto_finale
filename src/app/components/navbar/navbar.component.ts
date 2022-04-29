@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../auth/auth.service';
 import { BreakpointObserver } from '@angular/cdk/layout';
-
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-navbar',
